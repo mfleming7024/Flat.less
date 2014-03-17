@@ -130,6 +130,18 @@
 .container .offset-by-eleven {
   margin-left: 880px;
 }
+/* #Extras
+================================================== */
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */

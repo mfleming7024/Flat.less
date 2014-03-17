@@ -30,6 +30,7 @@ hr {
 div#colorBlocks * {
     .size(100%/20; 100px);
     float: left;
+    .reflect(40%, 0.6);
     &#alizarin      {background-color: @alizarin;       }
     &#pomegranate   {background-color: @pomegranate;    }
     &#carrot        {background-color: @carrot;         }
@@ -50,46 +51,6 @@ div#colorBlocks * {
     &#asbestos      {background-color: @asbestos;       }
     &#clouds        {background-color: @clouds;         }
     &#silver        {background-color: @silver;         }
-}
-
-div#colorMath {
-    & * {
-        div:nth-child(2){.size(100%, 125px);}
-        div:nth-child(4){.size(100%, 125px);}
-    }
-    #lightened {
-        div:nth-child(2) {background-color: @midnightblue;}
-        div:nth-child(4) {background-color: lighten(@midnightblue, 20%);}
-    }
-    #darkened {
-        div:nth-child(2) {background-color: @emerald;}
-        div:nth-child(4) {background-color: darken(@emerald, 20%);}
-    }
-    #saturated {
-        @newcolor: desaturate(@carrot, 30%);
-        div:nth-child(2) {background-color: @newcolor;}
-        div:nth-child(4) {background-color: saturate(@newcolor, 60%);}
-    }
-}
-
-div#colorUses {
-    & * div {.size(100%, 125px);}
-    #hover {
-        div {
-            background-color: @sunflower;
-            &:hover {background-color: darken(@sunflower, 5%);} 
-        }
-    }
-    #gradient {
-        div {.gradient(@emerald,@emerald,darken(@emerald, 20%));}
-    }
-    #animation {
-        div {
-            background-color: @turquoise;
-            .transition(background-color, 0.5s, linear);
-            &:hover {background-color: darken(@turquoise, 10%);}
-        }
-    }
 }
 
 div#buttonExamples {
@@ -136,9 +97,6 @@ div#radcheckExamples {
     div.checkbox_purple     {.checkbox(@amethyst);          }
 }
 
-div#otherInputs {
-    div.number_input        {.numInput();               }
-}
 //----------------------------------------------------------
 
 
