@@ -3,9 +3,12 @@
 ==================================================
     #Base Variables
     #Base 960 Grid
+    #Extras
     #Tablet (Portrait)
     #Mobile (Portrait)
     #Mobile (Landscape) 
+    #Custom Media Queries
+    
 ================================================== */
 /* #Base Variables
 ================================================== */
@@ -142,10 +145,50 @@
 .right {
   float: right;
 }
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 /* #Tablet (Portrait)
 ================================================== */
-/* Note: Design for a width of 768px */
-/*****************************
+/* Note: Design for a width of 768px 
+******************************
 12 Column
 ((768/12) - 20) = 44
 *****************************/
