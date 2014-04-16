@@ -18,15 +18,84 @@ h1 {
     font: 36px "Mohave";
 }
 
-div.column, div.columns {
-    background-color: @alizarin;
-    height: 40px;
-}
-
-div h2 {
+h2 {
     color: white;
     padding-top: 10px;
     text-align: center;
+}
+
+#grid_system  {
+        div.column, div.columns {
+        background-color: @alizarin;
+        height: 40px;
+    }
+}
+
+#buttons_forms {
+    //Text Inputs
+    input {
+        margin-bottom: 3px;   
+    }
+    input.regular           {.text_input(@concrete);        }
+    input.error             {.text_input(@alizarin);        }
+    input.success           {.text_input(@emerald);         }
+    
+    //Regular Buttons
+    button.tiny_reg         {.tiny_button();                }
+    button.small_reg        {.small_button();               }
+    button.medium_reg       {.medium_button();              }
+    button.large_reg        {.large_button();               }
+    
+    //Error Buttons
+    button.tiny_err         {.tiny_button(@pomegranate);    }
+    button.small_err        {.small_button(@pomegranate);   }
+    button.medium_err       {.medium_button(@pomegranate);  }
+    button.large_err        {.large_button(@pomegranate);   }
+
+    //Attention Buttons
+    button.tiny_att         {.tiny_button(@sunflower);      }
+    button.small_att        {.small_button(@sunflower);     }
+    button.medium_att       {.medium_button(@sunflower);    }
+    button.large_att        {.large_button(@sunflower);     }
+    
+    //Radio Buttons
+    div.radio_button_blue   {.radio_button();               }
+    div.radio_button_red    {.radio_button(@alizarin);      }
+    div.radio_button_green  {.radio_button(@emerald);       }
+    
+    //Checkboxes
+    div.checkbox_blue       {.checkbox();                   }
+    div.checkbox_red        {.checkbox(@alizarin);          }
+    div.checkbox_green      {.checkbox(@emerald);           }
+    div.checkbox_yellow     {.checkbox(@sunflower);         }
+    div.checkbox_orange     {.checkbox(@carrot);            }
+    div.checkbox_purple     {.checkbox(@amethyst);          }
+}
+
+#colors {
+    div {
+        height: 35px;   
+    }
+    #alizarin        { background-color: @alizarin}
+    #pomegranate     { background-color: @pomegranate}     
+    #carrot          { background-color: @carrot}      
+    #pumpkin         { background-color: @pumpkin}     
+    #sunflower       { background-color: @sunflower}       
+    #darksunflower   { background-color: @darksunflower}      
+    #turquoise       { background-color: @turquoise}        
+    #greensea        { background-color: @greensea}
+    #emerald         { background-color: @emerald}
+    #nephritis       { background-color: @nephritis}
+    #peterriver      { background-color: @peterriver}
+    #belizehole      { background-color: @belizehole}
+    #amethyst        { background-color: @amethyst}
+    #wisteria        { background-color: @wisteria}
+    #clouds          { background-color: @clouds}
+    #silver          { background-color: @silver}
+    #concrete        { background-color: @concrete}
+    #asbestos        { background-color: @asbestos}
+    #wetasphault     { background-color: @wetasphault}
+    #midnightblue    { background-color: @midnightblue}
 }
 
 
