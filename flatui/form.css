@@ -33,10 +33,10 @@ input.regular {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #9aa4a5;
-  font: 15px "Myriad Pro";
+  font: 16px "Myriad Pro";
   line-height: 1.867;
-  padding: 14px 12px;
-  height: 33px;
+  padding: 5px 12px 0;
+  height: 32px;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -59,10 +59,10 @@ input.error {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #ed7669;
-  font: 15px "Myriad Pro";
+  font: 16px "Myriad Pro";
   line-height: 1.867;
-  padding: 14px 12px;
-  height: 33px;
+  padding: 5px 12px 0;
+  height: 32px;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -85,10 +85,10 @@ input.success {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #54d98c;
-  font: 15px "Myriad Pro";
+  font: 16px "Myriad Pro";
   line-height: 1.867;
-  padding: 14px 12px;
-  height: 33px;
+  padding: 5px 12px 0;
+  height: 32px;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -422,6 +422,7 @@ div.radio_button_blue input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  padding: 1px;
   width: 22px;
   height: 22px;
   -webkit-border-radius: 15px;
@@ -430,7 +431,7 @@ div.radio_button_blue input {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 3px solid #3498db;
+  border: 2px solid #3498db;
   background-color: #5faee3;
 }
 div.radio_button_blue input:before {
@@ -458,6 +459,7 @@ div.radio_button_red input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  padding: 1px;
   width: 22px;
   height: 22px;
   -webkit-border-radius: 15px;
@@ -466,7 +468,7 @@ div.radio_button_red input {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 3px solid #e74c3c;
+  border: 2px solid #e74c3c;
   background-color: #ed7669;
 }
 div.radio_button_red input:before {
@@ -494,6 +496,7 @@ div.radio_button_green input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  padding: 1px;
   width: 22px;
   height: 22px;
   -webkit-border-radius: 15px;
@@ -502,7 +505,7 @@ div.radio_button_green input {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 3px solid #2ecc71;
+  border: 2px solid #2ecc71;
   background-color: #54d98c;
 }
 div.radio_button_green input:before {
@@ -519,11 +522,10 @@ div.radio_button_green input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_blue {
-  cursor: pointer;
-}
 div.checkbox_blue label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_blue input {
@@ -557,11 +559,10 @@ div.checkbox_blue input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_red {
-  cursor: pointer;
-}
 div.checkbox_red label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_red input {
@@ -595,11 +596,10 @@ div.checkbox_red input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_green {
-  cursor: pointer;
-}
 div.checkbox_green label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_green input {
@@ -633,11 +633,10 @@ div.checkbox_green input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_yellow {
-  cursor: pointer;
-}
 div.checkbox_yellow label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_yellow input {
@@ -671,11 +670,10 @@ div.checkbox_yellow input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_orange {
-  cursor: pointer;
-}
 div.checkbox_orange label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_orange input {
@@ -709,11 +707,10 @@ div.checkbox_orange input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-div.checkbox_purple {
-  cursor: pointer;
-}
 div.checkbox_purple label {
   float: left;
+  text-align: right;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.checkbox_purple input {
