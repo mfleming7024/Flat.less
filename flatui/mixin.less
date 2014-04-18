@@ -13,16 +13,15 @@
   background: -ms-linear-gradient(bottom,@start,@stop);
   background: -moz-linear-gradient(center bottom,@start 0%,@stop 100%);
   background: -o-linear-gradient(@stop,@start);
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+  filter:     e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
 
 /* #Border Radius
 ================================================== */
 .border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
+	-webkit-border-radius:   @radius;
+	-moz-border-radius:      @radius;
+	border-radius:           @radius;
 	-moz-background-clip:    padding;
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;

@@ -414,7 +414,7 @@ button.large_att:hover {
 div.radio_button_blue label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_blue input {
@@ -450,7 +450,7 @@ div.radio_button_blue input:checked:before {
 div.radio_button_red label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_red input {
@@ -486,7 +486,7 @@ div.radio_button_red input:checked:before {
 div.radio_button_green label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_green input {

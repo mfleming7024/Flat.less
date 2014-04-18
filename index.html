@@ -10,12 +10,12 @@
 <body class="container">
     <div class="row" id="title">
         <h1 class="twelve columns">Flat.less</h1>
-        <hr class="twelve columns" />
+        <hr />
         <p class="twelve columns">Welcome to a Flat UI themed Less/CSS framework</p>
     </div>
     <div class="row">
         <h1 class="twelve columns">Grid System</h1>
-        <hr class="twelve columns" />
+        <hr />
     </div>
     <div id="grid_system">
         <div class="row">
@@ -42,57 +42,67 @@
             <div class="six columns"><h2>Six</h2><h3>364px</h3></div>
             <div class="six columns"><h2>Six</h2><h3>364px</h3></div>
         </div>
+        <div class="row">
+            <div class="twelve columns"><h2>Twelve</h2><h3>940px</h3></div>
+        </div>
     </div><!--End Grid System -->
     
     <div class="row">
-        <h1 class="twelve columns">Buttons</h1>
-        <hr class="twelve columns" />
+        <div class="row">
+            <h1 class="twelve columns">Buttons</h1>
+            <hr />
+        </div>
         <div id="buttons_forms">
             <div class="one-third column">
-                <button class="tiny_reg">Success</button>
-                <button class="small_reg">Success</button>
-                <button class="medium_reg">Success</button>
+                <button class="tiny_reg hide_for_mobile">Success</button>
+                <button class="small_reg hide_for_mobile">Success</button>
+                <button class="medium_reg hide_for_mobile">Success</button>
                 <button class="large_reg">Success</button>
             </div>
             <div class="one-third column">
-                <button class="tiny_err">Error</button>
-                <button class="small_err">Error</button>
-                <button class="medium_err">Error</button>
+                <button class="tiny_err hide_for_mobile">Error</button>
+                <button class="small_err hide_for_mobile">Error</button>
+                <button class="medium_err hide_for_mobile">Error</button>
                 <button class="large_err">Error</button>
             </div>
             <div class="one-third column">
-                <button class="tiny_att">Attention</button>
-                <button class="small_att">Attention</button>
-                <button class="medium_att">Attention</button>
+                <button class="tiny_att hide_for_mobile">Attention</button>
+                <button class="small_att hide_for_mobile">Attention</button>
+                <button class="medium_att hide_for_mobile">Attention</button>
                 <button class="large_att">Attention</button>
             </div>
         </div>
     </div><!--End Buttons -->
     
     <div class="row">
-        <h1 class="twelve columns">Form Elements</h1>
-        <hr class="twelve columns" />
-        <div class="twelve columns" id="buttons_forms">
-            <div class="one-third column alpha">
+        <div class="row">
+            <h1 class="twelve columns">Form Elements</h1>
+            <hr />
+        </div>
+        <div id="buttons_forms">
+            <div class="one-third column">
+                <h2>Text Inputs</h2>
                 <input class="regular full" type="text" value="Type here" />
                 <input class="error full"   type="text" value="Type here" />
                 <input class="success full" type="text" value="Type here" />
             </div><!-- End Text Inputs -->
             <div class="one-third column">
-                <div class="radio_button_green full left">
-                    <label for="rad_button1">Default</label>
-                    <input type="radio" name="radios" id="rad_button1" />
-                </div>
+                <h2>Radio Buttons</h2>
                 <div class="radio_button_green full left disabled">
                     <label for="rad_button2">Disabled</label>
                     <input type="radio" name="radios" id="rad_button2" />
+                </div>
+                <div class="radio_button_green full left">
+                    <label for="rad_button1">Default</label>
+                    <input type="radio" name="radios" id="rad_button1" />
                 </div>
                 <div class="radio_button_green full left">
                     <label for="rad_button3">Checked</label>
                     <input type="radio" name="radios" checked id="rad_button3" />
                 </div>
             </div><!-- End Radio Buttons -->
-            <div class="one-third column omega">
+            <div class="one-third column">
+                <h2>Checkboxes</h2>
                 <div class="checkbox_blue">
                     <label for="checkbox1">Checkbox 1</label>
                     <input type="checkbox" id="checkbox1" />
@@ -121,58 +131,58 @@
         </div><!-- End Form Elements -->
     </div><!-- End Row -->
     
-    <div id="colors">
+    <div class="row" id="colors">
         <div class="row">
-            <h1 class="twelve columns">Color Palettes</h1>
-            <hr class="twelve columns" />
-            <div class="row">
-                <div class="one-quarter column">
-                    <div class="full" id="alizarin"></div>
-                    <div class="full" id="pomegranate"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="carrot"></div>
-                    <div class="full" id="pumpkin"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="sunflower"></div>
-                    <div class="full" id="darksunflower"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="turquoise"></div>
-                    <div class="full" id="greensea"></div>
-                </div>
+            <h1 class="twelve columns">Colors</h1>
+            <hr />
+        </div>
+        <div class="row">
+            <div class="one-quarter column">
+                <div class="full" id="alizarin"></div>
+                <div class="full" id="pomegranate"></div>
             </div>
-            <div class="row">
-                <div class="one-quarter column">
-                    <div class="full" id="emerald"></div>
-                    <div class="full" id="nephritis"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="peterriver"></div>
-                    <div class="full" id="belizehole"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="amethyst"></div>
-                    <div class="full" id="wisteria"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="clouds"></div>
-                    <div class="full" id="silver"></div>
-                </div>
+            <div class="one-quarter column">
+                <div class="full" id="carrot"></div>
+                <div class="full" id="pumpkin"></div>
             </div>
-            <div class="row">  
-                <div class="one-quarter column">
-                    <div class="full" id="concrete"></div>
-                    <div class="full" id="asbestos"></div>
-                </div>
-                <div class="one-quarter column">
-                    <div class="full" id="wetasphault"></div>
-                    <div class="full" id="midnightblue"></div>
-                </div>
+            <div class="one-quarter column">
+                <div class="full" id="sunflower"></div>
+                <div class="full" id="darksunflower"></div>
             </div>
-        </div><!-- End Colors -->
-    </div><!-- End Row -->
+            <div class="one-quarter column">
+                <div class="full" id="turquoise"></div>
+                <div class="full" id="greensea"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-quarter column">
+                <div class="full" id="emerald"></div>
+                <div class="full" id="nephritis"></div>
+            </div>
+            <div class="one-quarter column">
+                <div class="full" id="peterriver"></div>
+                <div class="full" id="belizehole"></div>
+            </div>
+            <div class="one-quarter column">
+                <div class="full" id="amethyst"></div>
+                <div class="full" id="wisteria"></div>
+            </div>
+            <div class="one-quarter column">
+                <div class="full" id="clouds"></div>
+                <div class="full" id="silver"></div>
+            </div>
+        </div>
+        <div class="row">  
+            <div class="one-quarter column">
+                <div class="full" id="concrete"></div>
+                <div class="full" id="asbestos"></div>
+            </div>
+            <div class="one-quarter column">
+                <div class="full" id="wetasphault"></div>
+                <div class="full" id="midnightblue"></div>
+            </div>
+        </div>
+    </div><!-- End Colors -->
     
     <!-- Javascript -->
     <script src="js/jquery-2.1.0.min.js"></script>

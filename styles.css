@@ -239,8 +239,9 @@ a img {
 ================================================== */
 hr {
   height: 2px;
-  margin: 5px 0;
-  background-color: gray;
+  width: 100%;
+  margin: 0 10px;
+  background-color: #bdc3c7;
 }
 .disabled {
   pointer-events: none;
@@ -506,6 +507,15 @@ or wrap each row of columns in a <div class="row"> */
 /* #Mobile (Portrait)
 ================================================== */
 /* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  hr {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hide_for_mobile {
+    display: none;
+  }
+}
 /* #Mobile (Landscape)
 ================================================== */
 /* Note: Design for a width of 480px */
@@ -924,7 +934,7 @@ button.large_att:hover {
 div.radio_button_blue label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_blue input {
@@ -960,7 +970,7 @@ div.radio_button_blue input:checked:before {
 div.radio_button_red label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_red input {
@@ -996,7 +1006,7 @@ div.radio_button_red input:checked:before {
 div.radio_button_green label {
   float: left;
   text-align: right;
-  width: 90px;
+  min-width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_green input {
@@ -1272,10 +1282,6 @@ div#title h1 {
   text-align: center;
   font-family: "Corbel";
 }
-div#title hr {
-  height: 2px;
-  background-color: #bdc3c7;
-}
 div#title p {
   font-family: "Corbel";
   color: #bdc3c7;
@@ -1285,11 +1291,6 @@ div#title p {
 h1 {
   font: 36px "Corbel";
   margin-top: 5px;
-}
-h2 {
-  color: white;
-  padding-top: 10px;
-  text-align: center;
 }
 #grid_system div.column,
 #grid_system div.columns {
@@ -1305,21 +1306,20 @@ h2 {
   text-align: center;
   top: 8px;
   position: absolute;
+  color: white;
 }
 #grid_system h2 {
   opacity: 1;
-  color: white;
   font-family: "Corbel";
 }
 #grid_system h3 {
   right: 20px;
   opacity: 0;
-  color: white;
 }
 #buttons_forms input[type="text"] {
   margin-bottom: 3px;
 }
-#colors div div div div {
+#colors div div div {
   height: 35px;
 }
 #colors #alizarin {

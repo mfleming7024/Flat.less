@@ -138,7 +138,8 @@
 ================================================== */
 hr {
   height: 2px;
-  margin: 5px 0;
+  width: 100%;
+  margin: 0 10px;
   background-color: gray;
 }
 .disabled {
@@ -405,6 +406,11 @@ or wrap each row of columns in a <div class="row"> */
 /* #Mobile (Portrait)
 ================================================== */
 /* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .hide_for_mobile {
+    display: none;
+  }
+}
 /* #Mobile (Landscape)
 ================================================== */
 /* Note: Design for a width of 480px */
