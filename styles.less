@@ -9,15 +9,33 @@
 
 /* #Import a font
 ================================================== */
-.font-face("Mohave", "fonts/Mohave.otf");
-
-body {opacity: 0;}
+//.font-face("Mohave", "fonts/Mohave.otf");
 
 /* #Regular Code
 ================================================== */
+body {opacity: 0;}
+
+div#title {
+    margin-bottom: 10px;
+    h1 {
+        font-size: 56px;
+        text-align: center;
+        font-family: "Corbel";
+    }
+    hr {
+        height: 2px;
+        background-color: @silver;
+    }
+    p {
+        font-family: "Corbel";
+        color: @silver;
+        font-size: 24px;
+        text-align: center;
+    }
+}
 
 h1 {
-    font: 36px "Mohave";
+    font: 36px "Corbel";
     margin-top: 5px;
 }
 
@@ -44,6 +62,7 @@ h2 {
     h2 {
         opacity: 1;
         color: white;
+        font-family: "Corbel";
     }
     h3 { 
         right: 20px;

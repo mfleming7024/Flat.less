@@ -535,14 +535,14 @@ or wrap each row of columns in a <div class="row"> */
 /* #Number Inputs (currently testing)
 ================================================== */
 input.regular {
-  border: 1px solid #bfc8c9;
+  border: 1px solid #a7b0b1;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  color: #b1bdbd;
+  color: #9aa4a5;
   font: 15px "Myriad Pro";
   line-height: 1.867;
   padding: 14px 12px;
@@ -557,8 +557,8 @@ input.regular {
   transition: all 0.5s linear;
 }
 input.regular:focus {
-  border: 1px solid #dae0e0;
-  color: #798d8f;
+  border: 1px solid #c2c9c9;
+  color: #667273;
 }
 input.error {
   border: 1px solid #ef8b80;
@@ -923,6 +923,8 @@ button.large_att:hover {
 }
 div.radio_button_blue label {
   float: left;
+  text-align: right;
+  width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_blue input {
@@ -957,6 +959,8 @@ div.radio_button_blue input:checked:before {
 }
 div.radio_button_red label {
   float: left;
+  text-align: right;
+  width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_red input {
@@ -991,6 +995,8 @@ div.radio_button_red input:checked:before {
 }
 div.radio_button_green label {
   float: left;
+  text-align: right;
+  width: 90px;
   margin: 3px 7px 3px 0;
 }
 div.radio_button_green input {
@@ -1028,7 +1034,7 @@ div.checkbox_blue {
 }
 div.checkbox_blue label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_blue input {
   margin-top: 3px;
@@ -1066,7 +1072,7 @@ div.checkbox_red {
 }
 div.checkbox_red label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_red input {
   margin-top: 3px;
@@ -1104,7 +1110,7 @@ div.checkbox_green {
 }
 div.checkbox_green label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_green input {
   margin-top: 3px;
@@ -1142,7 +1148,7 @@ div.checkbox_yellow {
 }
 div.checkbox_yellow label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_yellow input {
   margin-top: 3px;
@@ -1180,7 +1186,7 @@ div.checkbox_orange {
 }
 div.checkbox_orange label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_orange input {
   margin-top: 3px;
@@ -1218,7 +1224,7 @@ div.checkbox_purple {
 }
 div.checkbox_purple label {
   float: left;
-  margin: 3px 7px;
+  margin: 3px 7px 3px 0;
 }
 div.checkbox_purple input {
   margin-top: 3px;
@@ -1253,17 +1259,31 @@ div.checkbox_purple input:checked:before {
 }
 /* #Import a font
 ================================================== */
-@font-face {
-  font-family: '"Mohave"';
-  src: url('fonts/Mohave.otf.eot?#') format('eot'), url('fonts/Mohave.otf.woff') format('woff'), url('fonts/Mohave.otf.ttf') format('truetype');
-}
+/* #Regular Code
+================================================== */
 body {
   opacity: 0;
 }
-/* #Regular Code
-================================================== */
+div#title {
+  margin-bottom: 10px;
+}
+div#title h1 {
+  font-size: 56px;
+  text-align: center;
+  font-family: "Corbel";
+}
+div#title hr {
+  height: 2px;
+  background-color: #bdc3c7;
+}
+div#title p {
+  font-family: "Corbel";
+  color: #bdc3c7;
+  font-size: 24px;
+  text-align: center;
+}
 h1 {
-  font: 36px "Mohave";
+  font: 36px "Corbel";
   margin-top: 5px;
 }
 h2 {
@@ -1289,6 +1309,7 @@ h2 {
 #grid_system h2 {
   opacity: 1;
   color: white;
+  font-family: "Corbel";
 }
 #grid_system h3 {
   right: 20px;
