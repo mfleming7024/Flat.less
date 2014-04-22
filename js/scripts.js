@@ -12,3 +12,13 @@ $("#grid_system .row div").hover(function() {
     that.find("h2").stop().animate({opacity: 1, left: "0px"}, 400);
     that.find("h3").stop().animate({opacity: 0, right: "20px"}, 400);
 });
+
+//Colors id name animation
+$("#colors .row div div").hover(function() {
+    var that = $(this);
+    that.find("h2").stop().animate({opacity: 1}, 400);
+    
+}, function(){
+    var that = $(this);
+    that.find("h2").stop().animate({opacity: 0}, 300);
+});

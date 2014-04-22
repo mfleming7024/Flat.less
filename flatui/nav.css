@@ -102,5 +102,85 @@
 ================================================== */
 /* #Font Loading
 ================================================== */
-/* #Buttons
-================================================== */
+.navbar-reg {
+  width: 100%;
+  background: #3498db;
+  overflow: hidden;
+  font: 16px "Myriad Pro";
+}
+.navbar-reg ul {
+  overflow: hidden;
+  list-style-type: none;
+}
+.navbar-reg ul li {
+  cursor: pointer;
+  border-left: 1px solid #5faee3;
+  float: left;
+  width: 92px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.navbar-reg ul li:first-child {
+  border-left: none;
+}
+.navbar-reg ul li:last-child {
+  border-right: 1px solid #5faee3;
+}
+.navbar-reg ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: white;
+}
+.navbar-reg ul li a:hover {
+  color: #217dbb;
+  background-color: #4aa3df;
+}
+.navbar-green {
+  width: 100%;
+  background: #2ecc71;
+  overflow: hidden;
+  font: 16px "Myriad Pro";
+}
+.navbar-green ul {
+  overflow: hidden;
+  list-style-type: none;
+}
+.navbar-green ul li {
+  cursor: pointer;
+  border-left: 1px solid #54d98c;
+  float: left;
+  width: 92px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.navbar-green ul li:first-child {
+  border-left: none;
+}
+.navbar-green ul li:last-child {
+  border-right: 1px solid #54d98c;
+}
+.navbar-green ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: white;
+}
+.navbar-green ul li a:hover {
+  color: #25a25a;
+  background-color: #40d47e;
+}
