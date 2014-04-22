@@ -1,3 +1,5 @@
+@import "color.less";
+
 /* #Basic Size
 ================================================== */
 .size(@width; @height) {
@@ -41,6 +43,22 @@
 .border-left-radius(@radius) {
     border-bottom-left-radius:  @radius;
     border-top-left-radius:     @radius;
+}
+
+/* #Image Shapes
+================================================== */
+.img-circle {
+    .border-radius(100px);
+}
+
+.img-rounded {
+    .border-radius(10px);
+}
+
+.img-thumb {
+    padding: 3px;
+    border: 1px solid @silver;
+    .border-radius(4px);
 }
 
 /* #Box Shadow

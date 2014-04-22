@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title>Page Title</title>
     <link type="text/css" rel="stylesheet/less" href="styles.less" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
     <script src="js/less-1.6.1.min.js"></script>
 </head>
 <body class="container">
     <div class="row" id="title">
         <h1 class="twelve columns">Flat.less</h1>
-        <hr />
         <p class="twelve columns">Welcome to a Flat UI themed Less/CSS framework</p>
     </div>
     <div class="row">
         <h1 class="twelve columns">Grid System</h1>
         <hr />
+        <p class="twelve columns">Using our grid system can help you layout page elements much faster during the development process. Just put the .container class on the body and you will then be able to layout elements accordingly using our one-twelve column classes. Each row adds up to twelve columns based on the typical 960px grid.</p>
     </div>
-    <div id="grid_system">
+    <div class="row" id="grid_system">
         <div class="row">
             <div class="one column" id="alizarin"><h2>One</h2><h3>44px</h3></div>
             <div class="eleven columns" id="pomegranate"><h2>Eleven</h2><h3>684px</h3></div>
@@ -125,52 +125,103 @@
             <hr />
         </div>
         <div class="row">
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="alizarin"></div>
                 <div class="full" id="pomegranate"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="carrot"></div>
                 <div class="full" id="pumpkin"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="sunflower"></div>
                 <div class="full" id="darksunflower"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="turquoise"></div>
                 <div class="full" id="greensea"></div>
             </div>
         </div>
         <div class="row">
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="emerald"></div>
                 <div class="full" id="nephritis"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="peterriver"></div>
                 <div class="full" id="belizehole"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="amethyst"></div>
                 <div class="full" id="wisteria"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="clouds"></div>
                 <div class="full" id="silver"></div>
             </div>
         </div>
         <div class="row">  
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="concrete"></div>
                 <div class="full" id="asbestos"></div>
             </div>
-            <div class="one-quarter column">
+            <div class="one-quarter column color_container">
                 <div class="full" id="wetasphault"></div>
                 <div class="full" id="midnightblue"></div>
             </div>
         </div>
     </div><!-- End Colors -->
+    
+
+    <div class="row" id="image_editing">
+        <h1 class="twelve columns">Image Edits</h1>
+        <hr />
+        <div class="row">
+            <div class="one-third column centered">
+                <img src="flatui/images/cat1.jpg" class="img-rounded" alt="" />
+                <h2>class: img-rounded</h2>
+            </div>
+            <div class="one-third column centered">
+                <img src="flatui/images/cat2.jpg" class="img-circle" alt="" />
+                <h2>class: img-circle</h2>
+            </div>
+            <div class="one-third column centered">
+                <img src="flatui/images/cat3.jpg" class="img-thumb" alt="" />
+                <h2>class: img-thumb</h2>
+            </div>
+        </div>
+    </div><!--End Image Edits -->
+    
+    <div class="row" id="navigation_bars">
+        <h1 class="twelve columns">Navigation Bars</h1>
+        <hr />
+        <div class="row">
+            <div class="one-half column centered">
+                <nav class="navbar-regular">
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </nav>
+                <h2>regular nav bar</h2>
+            </div>
+            <div class="one-half column centered">
+                <nav class="navbar-red">
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </nav>
+                <h2>or add color!</h2>
+            </div>
+        </div>
+    </div><!--End Navigation Bars -->
     
     <!-- Javascript -->
     <script src="js/jquery-2.1.0.min.js"></script>
