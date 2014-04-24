@@ -1,5 +1,5 @@
 //page fade animation
-$("body").animate({opacity:1}, 2000);
+$("body").animate({opacity:1}, 1300);
 
 //Grid pixel/class name animation
 $("#grid_system .row div").hover(function() {

@@ -116,10 +116,9 @@ nav.regular .hidden {
 nav.regular .hidden a {
   color: #196090;
   float: right;
-  display: block;
   text-decoration: none;
   width: 25px;
-  margin: 13px;
+  margin: 13px 13px 0 0;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
@@ -191,10 +190,9 @@ nav.green .hidden {
 nav.green .hidden a {
   color: #1b7943;
   float: right;
-  display: block;
   text-decoration: none;
   width: 25px;
-  margin: 13px;
+  margin: 13px 13px 0 0;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
