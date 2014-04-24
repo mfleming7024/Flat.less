@@ -178,10 +178,11 @@
 }
 /* #Extras
 ================================================== */
-hr {
+hr.twelve.columns {
   height: 2px;
   background-color: #bdc3c7;
-  margin: 3px 0 8px;
+  margin-top: 3px;
+  margin-bottom: 8px;
 }
 .lightened {
   color: #bdc3c7;
@@ -459,10 +460,6 @@ or wrap each row of columns in a <div class="row"> */
 ================================================== */
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  hr {
-    margin: 0 auto;
-    width: 100%;
-  }
   .hide_for_mobile {
     display: none;
   }

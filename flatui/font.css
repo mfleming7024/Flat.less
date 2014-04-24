@@ -60,6 +60,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+span:before {
+  padding-right: 4px;
+}
 .icon-home:before {
   content: "\e600";
 }

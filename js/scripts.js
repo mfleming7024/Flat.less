@@ -22,3 +22,18 @@ $("#colors .row div div").hover(function() {
     var that = $(this);
     that.find("h2").stop().animate({opacity: 0}, 300);
 });
+
+//Navigation bar triggering?
+$("nav.responsive .hidden a.menu").on("click", function(e){
+    e.preventDefault();
+    
+    var that = $(this);
+    
+    var menu = that.parent().parent().find("ul");
+    
+    if (menu.css('display') == 'none'){
+        menu.css("display", "block");
+    } else {
+        menu.css("display", "none");
+    }
+})

@@ -3,7 +3,7 @@
 
 /* #Input Fields
 ================================================== */
-.text-input(@color: @concrete) {
+.text-input(@color: @gray) {
     border: 1px solid lighten(@color, 15%);
     .border-radius(4px);
     color: lighten(@color, 10%);
@@ -23,7 +23,7 @@
 
 /* #Radio Buttons
 ================================================== */
-.radio-button(@color: @peterriver) {
+.radio-button(@color: @blue) {
     label {
         float: left;
         text-align: right;
@@ -58,7 +58,7 @@
 
 /* #Checkboxes
 ================================================== */
-.checkbox(@color: @peterriver) {
+.checkbox(@color: @blue) {
     label {
         float: left;
         text-align: right;
@@ -134,7 +134,7 @@
 
 /* #Buttons
 ================================================== */
-.button(@color: @emerald) {
+.button(@color: @green) {
     cursor: pointer;
     border: 0;
     min-width: 90px;
@@ -145,7 +145,7 @@
         background-color: lighten(@color, 10%);
     }
 }
-.medium-button(@color: @emerald) {
+.medium-button(@color: @green) {
     .button(@color);
     padding: 9px;
     font-size: 17px;
@@ -156,28 +156,28 @@
 ================================================== */
 
 //Text Inputs
-input.regular           {.text-input(@asbestos);     }
-input.error             {.text-input(@alizarin);     }
-input.success           {.text-input(@emerald);      }
+input.regular           {.text-input(@darkgray);    }
+input.error             {.text-input(@red);         }
+input.success           {.text-input(@green);       }
 
 //Number Inputs
-div.number_input        {.numInput();                }
+div.number_input        {.numInput();               }
 
 //Buttons
-button.success          {.medium-button(@emerald);   }
-button.error            {.medium-button(@alizarin);  }
-button.attention        {.medium-button(@sunflower); }
-button.caution          {.medium-button(@peterriver);}
+button.success          {.medium-button(@green);    }
+button.error            {.medium-button(@red);      }
+button.attention        {.medium-button(@yellow);   }
+button.caution          {.medium-button(@blue);}
 
 //Radio Buttons
-div.radio-button-blue   {.radio-button();            }
-div.radio-button-red    {.radio-button(@alizarin);   }
-div.radio-button-green  {.radio-button(@emerald);    }
+div.radio-button-blue   {.radio-button();           }
+div.radio-button-red    {.radio-button(@red);       }
+div.radio-button-green  {.radio-button(@green);     }
 
 //Checkboxes
-div.checkbox-blue       {.checkbox();                }
-div.checkbox-red        {.checkbox(@alizarin);       }
-div.checkbox-green      {.checkbox(@emerald);        }
-div.checkbox-yellow     {.checkbox(@sunflower);      }
-div.checkbox-orange     {.checkbox(@carrot);         }
-div.checkbox-purple     {.checkbox(@amethyst);       }
+div.checkbox-blue       {.checkbox();               }
+div.checkbox-red        {.checkbox(@red);           }
+div.checkbox-green      {.checkbox(@green);         }
+div.checkbox-yellow     {.checkbox(@yellow);        }
+div.checkbox-orange     {.checkbox(@orange);        }
+div.checkbox-purple     {.checkbox(@purple);        }
