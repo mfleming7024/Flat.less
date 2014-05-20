@@ -446,15 +446,15 @@ nav.off-canvas ul li a.active {
   }
   nav.off-canvas ul {
     position: fixed;
-    width: 35%;
+    width: 45%;
     height: 100%;
-    left: -35%;
+    left: -45%;
     top: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   nav.off-canvas ul:target {
     left: 0px;
@@ -474,6 +474,16 @@ nav.off-canvas ul li a.active {
   }
   nav.off-canvas ul li.nav-right {
     text-align: left;
+  }
+  nav.off-canvas ul li a {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+  }
+  nav.off-canvas ul li a:hover {
+    background-color: inherit;
   }
 }
 /* #Mobile (Landscape)

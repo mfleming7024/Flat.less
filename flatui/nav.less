@@ -219,11 +219,11 @@ nav.off-canvas {
             }
             ul {
                 position: fixed;
-                width: 35%;
+                width: 45%;
                 height: 100%;
-                left: -35%;
+                left: -45%;
                 top: 0;
-                .transition(all, 0.3s, ease-out);
+                .transition(all, 0.3s);
                 &:target {
                     left: 0px;
                 }
@@ -241,6 +241,16 @@ nav.off-canvas {
                     width: 100%;
                     &.nav-right {
                         text-align: left;
+                    }
+                    a {
+                        &:hover {
+                            background-color: inherit;
+                        }
+                        -o-transition-property: none !important;
+                        -moz-transition-property: none !important;
+                        -ms-transition-property: none !important;
+                        -webkit-transition-property: none !important;
+                        transition-property: none !important;
                     }
                 }
             }
