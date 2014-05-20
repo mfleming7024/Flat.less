@@ -1152,7 +1152,7 @@ div.checkbox-purple input:checked:before {
   opacity: 1;
 }
 nav.regular {
-  background: #3498db;
+  background: #95a5a6;
   font: 16px "Myriad Pro";
   position: relative;
   overflow: hidden;
@@ -1163,7 +1163,7 @@ nav.regular .hidden {
   display: none;
 }
 nav.regular .hidden a {
-  color: #196090;
+  color: #617374;
   float: right;
   text-decoration: none;
   width: 25px;
@@ -1178,7 +1178,7 @@ nav.regular .hidden a span {
   font-size: 26px;
 }
 nav.regular .hidden a:hover {
-  color: #8bc4ea;
+  color: #ccd4d5;
 }
 nav.regular ul {
   overflow: hidden;
@@ -1186,9 +1186,9 @@ nav.regular ul {
   display: block;
 }
 nav.regular ul li {
-  background: #3498db;
+  background: #95a5a6;
   cursor: pointer;
-  border-left: 1px solid #5faee3;
+  border-left: 1px solid #b1bdbd;
   float: left;
   min-width: 92px;
   height: 40px;
@@ -1218,12 +1218,12 @@ nav.regular ul li a {
   color: white;
 }
 nav.regular ul li a:hover {
-  color: #217dbb;
-  background-color: #4aa3df;
+  color: #798d8f;
+  background-color: #a3b1b2;
 }
 nav.regular ul li a.active {
-  color: #1d6fa5;
-  background-color: #5faee3;
+  color: #6d8082;
+  background-color: #b1bdbd;
 }
 nav.green {
   background: #2ecc71;
@@ -1299,11 +1299,162 @@ nav.green ul li a.active {
   color: #208e4e;
   background-color: #54d98c;
 }
+nav.red {
+  background: #e74c3c;
+  font: 16px "Myriad Pro";
+  position: relative;
+  overflow: hidden;
+}
+nav.red .hidden {
+  width: 100%;
+  height: 50px;
+  display: none;
+}
+nav.red .hidden a {
+  color: #a82315;
+  float: right;
+  text-decoration: none;
+  width: 25px;
+  margin: 13px 13px 0 0;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+nav.red .hidden a span {
+  font-size: 26px;
+}
+nav.red .hidden a:hover {
+  color: #f29f97;
+}
+nav.red ul {
+  overflow: hidden;
+  list-style-type: none;
+  display: block;
+}
+nav.red ul li {
+  background: #e74c3c;
+  cursor: pointer;
+  border-left: 1px solid #ed7669;
+  float: left;
+  min-width: 92px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+}
+nav.red ul li:first-child {
+  border-left: none;
+}
+nav.red ul li.nav-right {
+  min-width: 92px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+  float: right;
+}
+nav.red ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: white;
+}
+nav.red ul li a:hover {
+  color: #d62c1a;
+  background-color: #ea6153;
+}
+nav.red ul li a.active {
+  color: #bf2718;
+  background-color: #ed7669;
+}
+nav.off-canvas {
+  background: #95a5a6;
+  font: 16px "Myriad Pro";
+  position: relative;
+  overflow: hidden;
+}
+nav.off-canvas .hidden {
+  width: 100%;
+  height: 50px;
+  display: none;
+}
+nav.off-canvas .hidden a {
+  color: #617374;
+  float: left;
+  text-decoration: none;
+  width: 25px;
+  margin: 13px 13px 0 0;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+nav.off-canvas .hidden a span {
+  font-size: 26px;
+}
+nav.off-canvas .hidden a:hover {
+  color: #ccd4d5;
+}
+nav.off-canvas ul {
+  overflow: hidden;
+  list-style-type: none;
+  display: block;
+}
+nav.off-canvas ul li {
+  background: #95a5a6;
+  cursor: pointer;
+  border-left: 1px solid #b1bdbd;
+  float: left;
+  min-width: 92px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+}
+nav.off-canvas ul li:first-child {
+  border-left: none;
+}
+nav.off-canvas ul li.nav-right {
+  min-width: 92px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+  float: right;
+}
+nav.off-canvas ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: white;
+}
+nav.off-canvas ul li a:hover {
+  color: #798d8f;
+  background-color: #a3b1b2;
+}
+nav.off-canvas ul li a.active {
+  color: #6d8082;
+  background-color: #b1bdbd;
+}
 /* #Above 
 ================================================== */
 /* Note: Design for a width above 959px */
 @media only screen and (min-width: 959px) {
   nav.responsive ul {
+    display: block !important;
+  }
+  nav.off-canvas ul {
     display: block !important;
   }
 }
@@ -1312,6 +1463,9 @@ nav.green ul li a.active {
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   nav.responsive ul {
+    display: block !important;
+  }
+  nav.off-canvas ul {
     display: block !important;
   }
 }
@@ -1334,6 +1488,33 @@ nav.green ul li a.active {
     display: block;
     float: left;
     width: 100%;
+  }
+  nav.off-canvas {
+    overflow: visible;
+  }
+  nav.off-canvas .hidden {
+    display: block;
+  }
+  nav.off-canvas ul {
+    position: absolute;
+    top: 50px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  nav.off-canvas ul:target {
+    top: 100px;
+  }
+  nav.off-canvas ul li {
+    text-align: left;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  nav.off-canvas ul li.nav-right {
+    text-align: left;
   }
 }
 /* #Mobile (Landscape)
@@ -5605,9 +5786,6 @@ span:before {
 ================================================== */
 /* #Regular Code
 ================================================== */
-body {
-  opacity: 0;
-}
 body h1 {
   font: 36px "Corbel";
   margin-top: 5px;
@@ -5660,4 +5838,11 @@ div#title p {
   line-height: 35px;
   opacity: 0;
   cursor: default;
+}
+#icons span {
+  font-size: 26px;
+  padding: 10px;
+}
+#icons p {
+  font-size: 40px;
 }

@@ -1,6 +1,3 @@
-//page fade animation
-$("body").animate({opacity:1}, 1300);
-
 //Grid pixel/class name animation
 $("#grid_system .row div").hover(function() {
     var that = $(this);
@@ -24,7 +21,7 @@ $("#colors .row div div").hover(function() {
 });
 
 //Navigation bar triggering?
-$("nav.responsive .hidden a.menu").on("click", function(e){
+$("nav.responsive .hidden a#menu").on("click", function(e){
     e.preventDefault();
     
     var that = $(this);

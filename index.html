@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
     <script src="js/less-1.6.1.min.js"></script>
 </head>
-<body class="container">
+<body class="container" id="body-content">
     <div class="row" id="title">
         <h1 class="twelve columns">Flat.less</h1>
         <p class="twelve columns">Welcome to a Flat UI themed Less/CSS framework</p>
@@ -211,7 +211,7 @@
                 <h2>or make it responsive! <span class="lightened">nav.green.rounded</span></h2>
                 <nav class="green rounded responsive">
                     <div class="hidden">
-                        <a href="#" class="menu"><span class="icon-menu"></span></a>
+                        <a href="#" id="menu"><span class="icon-menu"></span></a>
                     </div>
                     <ul>
                         <li><a href="#" class="active"><span class="icon-home2">Home</span></a></li>
@@ -224,15 +224,43 @@
                 </nav>
             </div>
         </div>
+        <div class="row">
+            <div class="twelve columns">
+                <h2>or try off-canvas! <span class="lightened">nav.green.off-canvas</span></h2>
+                <nav class="off-canvas" id="off-canvas-nav">
+                    <div class="hidden">
+                        <a href="#menu-content"><span class="icon-menu2"></span></a>
+                    </div>
+                    <ul id="menu-content">
+                        <li><a href="#off-canvas-nav"><span class="icon-exit">Exit</span></a></li>
+                        <li><a href="#" class="active"><span class="icon-home2">Home</span></a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div><!--End Navigation Bars -->
     
     <div class="row" id="icons">
         <h1 class="twelve columns">IcoMoon Icon Font</h1>
         <hr class="twelve columns" />
         <div class="row">
-            <div class="twelve columns">
-                <h1>asdfasdf</h1>
-            </div>    
+            <div class="one-half column">
+                <span class="icon-glass left full">.icon-glass</span>
+                <span class="icon-music left full">.icon-music</span>
+                <span class="icon-search left full">.icon-search</span>
+                <span class="icon-envelope-o left full">.icon-envelope-o</span>
+            </div>
+            <div class="one-half column">
+                <span class="icon-heart left full">.icon-heart</span>
+                <span class="icon-star left full">.icon-star</span>
+                <span class="icon-star-o left full">.icon-star-o</span>
+                <span class="icon-envelope-o left full">.icon-envelope-o</span>
+            </div>
         </div>
     </div><!--End Icon Fonts -->
     
